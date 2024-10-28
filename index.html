@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Debit Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card-container">
+      <div class="card" id="debitCard">
+        <div class="card-front p-3">
+            <div class="chip "><img src="images/sim.png" alt=""></div>
+            <h5 class="bank-name text-white mt-3">BANK NAME</h5>
+            <p class="card-number text-white fs-5">1234 5678 9012 3456</p>
+            <p class="expiry-date text-white">EXP: 01/25</p>
+            <p class="cardholder-name text-white">CARDHOLDER NAME</p>
+          </div>
+          <div class="card-back p-3">
+            <div class="stripe bg-dark mb-3"></div>
+            <p class="customer-service text-white">For customer service, call: +123-456-789</p>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="signature-box text-white">SIGNATURE</span>
+              <span class="cvv-box bg-white text-dark px-2 py-1 rounded">123</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn mt-4" onclick="saveCardValue()">Save Card Details</button>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
+
